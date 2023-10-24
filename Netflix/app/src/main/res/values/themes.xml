@@ -2,6 +2,14 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Netflix" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <item name="colorPrimary">@color/primaria</item>
+        <item name="colorPrimaryVariant">@color/primaria_variacao</item>
+        <item name="colorOnPrimary">@color/branco</item>
+
+        <item name="colorSecondary">@color/secundaria</item>
+        <item name="colorSecondaryVariant">@color/secundaria</item>
+        <item name="colorOnSecondary">@color/preto</item>
+        <item name="android:windowBackground">@color/fundo</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
