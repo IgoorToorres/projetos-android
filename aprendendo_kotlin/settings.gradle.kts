@@ -15,4 +15,3 @@ dependencyResolutionManagement {
 
 rootProject.name = "aprendendo_kotlin"
 include(":app")
- 
