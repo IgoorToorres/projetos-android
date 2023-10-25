@@ -4,7 +4,8 @@ class Heranca {
 
 
 }
-open class Animal(){
+/*
+abstract class Animal(){
     var cor: String = ""
     var tamanho: Double = 0.0
     var peso: Double = 0.0
@@ -13,14 +14,16 @@ open class Animal(){
         return "este animal"
     }
 
-    fun dormir():String{
-        return "animal dormiu!";
-    }
+    abstract fun dormir():String
 }
 
 class Cachorro:Animal() {
     override fun correr():String{
         return super.correr() + " cachorro correu de 4 patas"
+    }
+
+    override fun dormir():String{
+        return "cachorro dorme depois de dormir"
     }
 }
 
@@ -32,6 +35,10 @@ class Passaro:Animal(){
 
     fun voar():String{
         return "voar"
+    }
+
+    override fun dormir():String{
+        return "passaro dorme depois de voar"
     }
 }
 
@@ -45,4 +52,4 @@ fun main(){
     println(cachorro.cor)
     passaro.cor = "azul"
     println(passaro.cor)
-}
+}*/
