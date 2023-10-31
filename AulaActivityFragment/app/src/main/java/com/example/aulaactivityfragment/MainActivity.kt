@@ -19,6 +19,18 @@ class MainActivity : AppCompatActivity() {
                 this,
                 MainActivity2::class.java
             )
+            //passando parametros para a outra tela:
+/*            intent.putExtra("serie", "greys anatomy")
+            intent.putExtra("IMDB", 7.8)
+            intent.putExtra("idade", 12)*/
+            val filme = Filme(
+                "sem limites",
+                "igor",
+                8.9
+            )
+
+            intent.putExtra("filme", filme)
+
             startActivity(intent)
 
         }

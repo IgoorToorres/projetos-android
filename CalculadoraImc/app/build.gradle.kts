@@ -1,17 +1,16 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("kotlin-parcelize")
 }
 
 android {
-    namespace = "com.example.aulaactivityfragment"
-    compileSdk = 34
+    namespace = "com.example.calculadoraimc"
+    compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.aulaactivityfragment"
+        applicationId = "com.example.calculadoraimc"
         minSdk = 24
-        targetSdk = 34
+        targetSdk = 33
         versionCode = 1
         versionName = "1.0"
 
