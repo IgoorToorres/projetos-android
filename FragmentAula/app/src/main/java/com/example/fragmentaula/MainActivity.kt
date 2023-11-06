@@ -3,6 +3,8 @@ package com.example.fragmentaula
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import androidx.fragment.app.commit
+import androidx.fragment.app.replace
 import com.example.fragmentaula.fragments.ChamadasFragment
 import com.example.fragmentaula.fragments.ConversasFragment
 
@@ -19,10 +21,15 @@ class MainActivity : AppCompatActivity() {
         btnChamadas = findViewById(R.id.btn_chamadas)
 
         btnConversas.setOnClickListener {
-            supportFragmentManager
+/*            supportFragmentManager
                 .beginTransaction()
                 .replace(R.id.fragment_conteudo, ConversasFragment())
-                .commit()
+                .commit()*/
+            supportFragmentManager.commit {
+                replace<ConversasFragment>(
+                    R.id.fragment_conteudo
+                )
+            }
         }
 
         btnChamadas.setOnClickListener {
