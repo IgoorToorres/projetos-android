@@ -15,7 +15,11 @@ class MainActivity : AppCompatActivity() {
 
         btnClique = findViewById(R.id.btn_clique)
         btnClique.setOnClickListener {
-            Toast.makeText(this, "Parabens, você clicou", Toast.LENGTH_SHORT).show()
+            Toast.makeText(
+                this,
+                "Parabens, você clicou",
+                Toast.LENGTH_SHORT
+            ).show()
         }
 
     }
