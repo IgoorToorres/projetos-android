@@ -40,6 +40,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calcularMelhorPreco() {
+        var numero = 0;
         val precoAlcool = inputAlcool.text.toString()
         val precoGasolina = inputGasolina.text.toString()
 
