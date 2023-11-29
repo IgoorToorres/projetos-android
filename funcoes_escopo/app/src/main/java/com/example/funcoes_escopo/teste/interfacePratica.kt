@@ -1,28 +1,36 @@
 package com.example.funcoes_escopo.teste
 
-
 class Musico(val instrumento: Instrumento){
     fun tocar(){
-        println("musico tocando")
+        println("musico tocou")
         instrumento.sendoTocado()
     }
 }
 
-abstract class Instrumento(){
+ interface Instrumento{
     open fun sendoTocado(){}
 }
 
-class Violao: Instrumento(){
+class Violao(): Instrumento{
     override fun sendoTocado(){
-        println("violao")
+        println("violão")
     }
 }
 
-class Bateria: Instrumento(){
+class Bateria(): Instrumento{
     override fun sendoTocado() {
         println("bateria")
     }
+
 }
+
+class Guitarra(): Instrumento{
+    override fun sendoTocado() {
+        println("guitarra")
+    }
+}
+
+
 
 
 fun main(){
@@ -30,9 +38,14 @@ fun main(){
     val musico1 = Musico(Violao())
     musico1.tocar()
 
-    println("--------------")
+    println("-----------")
 
     val musico2 = Musico(Bateria())
     musico2.tocar()
+
+    println("-----------")
+
+    val musico3 = Musico(Guitarra())
+    musico3.tocar()
 
 }
