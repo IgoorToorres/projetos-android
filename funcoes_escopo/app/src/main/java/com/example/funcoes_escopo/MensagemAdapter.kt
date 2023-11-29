@@ -12,7 +12,7 @@ class MensagemAdapter (
 ) : Adapter<MensagemAdapter.MensagemViewHolder>() {
 
     inner class MensagemViewHolder(
-        val itemView: View
+         itemView: View
     ) : ViewHolder(itemView){
 
         val txtNomeUsuario: TextView = itemView.findViewById(R.id.txt_nome_usuario)
